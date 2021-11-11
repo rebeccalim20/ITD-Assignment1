@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="maskon" size="0.100000 0.141462" />
+    <ImageTarget name="safedistancing" size="0.100000 0.141455" />
+    <ImageTarget name="doineedtowearmask" size="0.100000 0.141455" />
+    <ImageTarget name="novelcoronavirus" size="0.100000 0.100000" />
+    <ImageTarget name="handsanitizer" size="0.100000 0.128535" />
     <ImageTarget name="animeguy" size="0.100000 0.060000" />
   </Tracking>
 </QCARConfig>
