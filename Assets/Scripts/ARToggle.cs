@@ -5,7 +5,9 @@ using Vuforia;
 
 public class ARToggle : MonoBehaviour
 {
-    public GameObject astronaut;
+    public List<GameObject> models;
+   /* private int currentActiveIndex ;*/
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,12 +21,20 @@ public class ARToggle : MonoBehaviour
         if (VuforiaBehaviour.Instance.enabled)
         {
             VuforiaBehaviour.Instance.enabled = false;
-            astronaut.SetActive(false);
+            
+            foreach (GameObject obj in models)
+            {
+                obj.SetActive(false);
+            }
         }
+
         else
         {
             VuforiaBehaviour.Instance.enabled = true;
-            astronaut.SetActive(true);
+           /* foreach (GameObject obj in models)
+            {
+                obj.SetActive(true);
+            }*/
         }
     }
 }
