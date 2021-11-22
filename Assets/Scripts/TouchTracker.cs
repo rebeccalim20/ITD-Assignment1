@@ -8,12 +8,35 @@ public class TouchTracker : MonoBehaviour
     private Touch firstTouch;
     public Text debugText;
     public GameObject astronautbutton;
+
+    //rotate gameobject 
+    public GameObject rotateGo;
+    public float rotatespeed;
+    public bool rotatestatus = false; 
     // Start is called before the first frame update
     void Start()
     {
 
     }
 
+    public void Rotate()
+    {
+        if(rotatestatus ==false)
+        {
+            rotatestatus = true;
+        }
+        else
+        {
+            rotatestatus = false;
+        }
+    }
+    public void updatestatusrotate()
+    {
+        if(rotatestatus ==true)
+        {
+            rotateGo.transform.Rotate(Vector3.up , rotatespeed * Time.deltaTime);
+        }
+    }
     private void StoreTouches()
     {
         if (Input.GetMouseButtonDown(0))
@@ -28,11 +51,11 @@ public class TouchTracker : MonoBehaviour
                 debugText.text = "First touch at " + Input.mousePosition + "hit an object " + info.collider.name;
             }
 
-            if (info.collider.name == "Astronaut")
+            /*if (info.collider.name == "Astronaut")
             {
                 Debug.Log("hitastronauts");
                 astronautbutton.SetActive(true);
-            }
+            }*/
 
 
 
@@ -67,6 +90,7 @@ public class TouchTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        updatestatusrotate();
         StoreTouches();
     }
 }
