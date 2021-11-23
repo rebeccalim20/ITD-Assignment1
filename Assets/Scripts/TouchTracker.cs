@@ -7,7 +7,6 @@ public class TouchTracker : MonoBehaviour
 {
     private Touch firstTouch;
     public Text debugText;
-    public GameObject astronautbutton;
 
     //rotate gameobject 
     public GameObject rotateGo;
@@ -25,6 +24,7 @@ public class TouchTracker : MonoBehaviour
 
     public void Rotate()
     {
+      
         if(rotatestatus ==false)
         {
             rotatestatus = true;
@@ -43,7 +43,7 @@ public class TouchTracker : MonoBehaviour
     }
     private void StoreTouches()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) )
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -66,10 +66,8 @@ public class TouchTracker : MonoBehaviour
                         descripstatus = false;
                         descriptionastronaut.SetActive(false);
                     }
-
                 }
             }
-
 
             else
             {
