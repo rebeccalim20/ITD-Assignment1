@@ -15,12 +15,21 @@ C:/Users/chewe/OneDrive/Desktop/ITD Assg1/ITD-Assignment1
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< Updated upstream
 64472
 Successfully changed project path to: C:/Users/chewe/OneDrive/Desktop/ITD Assg1/ITD-Assignment1
 C:/Users/chewe/OneDrive/Desktop/ITD Assg1/ITD-Assignment1
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 35.36 ms, found 5 plugins.
 Preloading 2 native plugins for Editor in 1.25 ms.
+=======
+64069
+Successfully changed project path to: C:/Users/chewe/OneDrive/Desktop/ITD Assg1/ITD-Assignment1
+C:/Users/chewe/OneDrive/Desktop/ITD Assg1/ITD-Assignment1
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 48.59 ms, found 5 plugins.
+Preloading 2 native plugins for Editor in 1.76 ms.
+>>>>>>> Stashed changes
 Initialize engine version: 2020.3.20f1 (41c4e627c95f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/chewe/OneDrive/Desktop/ITD Assg1/ITD-Assignment1/Assets
@@ -35,6 +44,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56368
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -48,11 +58,27 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1117ms)
 		BeginReloadAssembly (34ms)
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56964
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001958 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 29.07 ms, found 5 plugins.
+Preloading 2 native plugins for Editor in 0.07 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.867 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2867ms)
+		BeginReloadAssembly (35ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 		EndReloadAssembly (296ms)
 			LoadAssemblies (33ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -67,16 +93,39 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (12ms)
 				ProcessInitializeOnLoadAttributes (54ms)
 				ProcessInitializeOnLoadMethodAttributes (20ms)
+=======
+		EndReloadAssembly (308ms)
+			LoadAssemblies (33ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (113ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (121ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (29ms)
+				BeforeProcessingInitializeOnLoad (6ms)
+				ProcessInitializeOnLoadAttributes (58ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+>>>>>>> Stashed changes
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005374 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.41 ms, found 5 plugins.
+=======
+Registered in 0.015164 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 5 plugins.
+>>>>>>> Stashed changes
 Preloading 2 native plugins for Editor in 0.08 ms.
 System.NullReferenceException: Object reference not set to an instance of an object
   at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <67f168408fbf4fce9c04342c093e9fe7>:0 
@@ -105,14 +154,22 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  0.746 seconds
 Domain Reload Profiling:
 	ReloadAssembly (746ms)
 		BeginReloadAssembly (102ms)
+=======
+- Completed reload, in  0.757 seconds
+Domain Reload Profiling:
+	ReloadAssembly (757ms)
+		BeginReloadAssembly (103ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (14ms)
 		EndReloadAssembly (601ms)
 			LoadAssemblies (57ms)
@@ -121,12 +178,27 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (34ms)
 			SetupLoadedEditorAssemblies (221ms)
+=======
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (608ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (211ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (217ms)
+>>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
+<<<<<<< Updated upstream
 				BeforeProcessingInitializeOnLoad (55ms)
 				ProcessInitializeOnLoadAttributes (155ms)
+=======
+				BeforeProcessingInitializeOnLoad (38ms)
+				ProcessInitializeOnLoadAttributes (167ms)
+>>>>>>> Stashed changes
 				ProcessInitializeOnLoadMethodAttributes (3ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
@@ -135,6 +207,7 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
+<<<<<<< Updated upstream
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
 Refreshing native plugins compatible for Editor in 0.39 ms, found 5 plugins.
 Preloading 2 native plugins for Editor in 0.07 ms.
@@ -144,6 +217,17 @@ System memory in use after: 75.5 MB.
 
 Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 2240.
 Total: 2.110000 ms (FindLiveObjects: 0.117200 ms CreateObjectMapping: 0.039800 ms MarkObjects: 1.901800 ms  DeleteObjects: 0.050500 ms)
+=======
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 5 plugins.
+Preloading 2 native plugins for Editor in 0.07 ms.
+Unloading 1531 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.7 MB.
+System memory in use after: 74.8 MB.
+
+Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 2229.
+Total: 2.787900 ms (FindLiveObjects: 0.121700 ms CreateObjectMapping: 0.053900 ms MarkObjects: 2.555400 ms  DeleteObjects: 0.056200 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -157,6 +241,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   path: Assets/Scripts/testing.cs
   artifactKey: Guid(c1215e5a562e2f14a8fdc5daae53d1cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/testing.cs using Guid(c1215e5a562e2f14a8fdc5daae53d1cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b062446cef926491b50c5b82c494a77') in 0.022228 seconds 
@@ -198,20 +283,46 @@ UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,st
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+=======
+  path: Assets/StreamingAssets
+  artifactKey: Guid(fd1a96e49a9d44bbdabee3e9edb3d529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets using Guid(fd1a96e49a9d44bbdabee3e9edb3d529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9f2ec9e4da77c4cce94331d0337dd5') in 0.007024 seconds 
+  Import took 0.008870 seconds .
 
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <67f168408fbf4fce9c04342c093e9fe7>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <67f168408fbf4fce9c04342c093e9fe7>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <67f168408fbf4fce9c04342c093e9fe7>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <67f168408fbf4fce9c04342c093e9fe7>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <67f168408fbf4fce9c04342c093e9fe7>:0 
-  at Vuforia.EditorClasses.InitializeOnLoadVuforiaTaskRunner..cctor () [0x00015] in <67f168408fbf4fce9c04342c093e9fe7>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(e8a45b0dd525655409b0fb3eb9a5fcee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(e8a45b0dd525655409b0fb3eb9a5fcee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b376938f673bd713f0897ef19bc67ae0') in 0.006333 seconds 
+  Import took 0.008166 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(9a624004a8edb4508942118ec1d933ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(9a624004a8edb4508942118ec1d933ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '188034be278ac7bfd94b560d87d172bc') in 0.005197 seconds 
+  Import took 0.006947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Common
+  artifactKey: Guid(90c3e01cf985f294d9be84c9b8083574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Common using Guid(90c3e01cf985f294d9be84c9b8083574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc7a218658ac0f233bbeef643eb0ffa4') in 0.004228 seconds 
+  Import took 0.006057 seconds .
+>>>>>>> Stashed changes
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(ade91fa75b2ef9e48adc67b743584cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(ade91fa75b2ef9e48adc67b743584cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db305ea144ed3ce9f2af39091bf3ae33') in 0.004328 seconds 
+  Import took 0.006083 seconds .
+
+<<<<<<< Updated upstream
 Mono: successfully reloaded assembly
 - Completed reload, in  0.690 seconds
 Domain Reload Profiling:
@@ -1152,4 +1263,22 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+=======
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/SamplesResources
+  artifactKey: Guid(917c346746ceb4c8bb948408cc317298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources using Guid(917c346746ceb4c8bb948408cc317298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c64eb7d508ee0c01c4ed2ec669f449') in 0.004295 seconds 
+  Import took 0.006142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Editor
+  artifactKey: Guid(c4ea4db5ea0655c489a6c10ba5043bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor using Guid(c4ea4db5ea0655c489a6c10ba5043bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '806e75023bdf3e3b13e7d77dcddfb090') in 0.004235 seconds 
+  Import took 0.006102 seconds .
+
+>>>>>>> Stashed changes
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
