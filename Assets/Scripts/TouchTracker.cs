@@ -12,7 +12,11 @@ public class TouchTracker : MonoBehaviour
     //rotate gameobject 
     public GameObject rotateGo;
     public float rotatespeed;
-    public bool rotatestatus = false; 
+    public bool rotatestatus = false;
+
+    //astronaut 3d go
+    public GameObject descriptionastronaut;
+    public bool descripstatus = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,16 +51,24 @@ public class TouchTracker : MonoBehaviour
 
             if (Physics.Raycast(ray, out info))
             {
-                
+
                 debugText.text = "First touch at " + Input.mousePosition + "hit an object " + info.collider.name;
+                
+                if (info.collider.tag == "Astronaut")
+                {
+                    if (descripstatus == false)
+                    {
+                        descriptionastronaut.SetActive(true);
+                        descripstatus = true;
+                    }
+                    else
+                    {
+                        descripstatus = false;
+                        descriptionastronaut.SetActive(false);
+                    }
+
+                }
             }
-
-            /*if (info.collider.name == "Astronaut")
-            {
-                Debug.Log("hitastronauts");
-                astronautbutton.SetActive(true);
-            }*/
-
 
 
             else
