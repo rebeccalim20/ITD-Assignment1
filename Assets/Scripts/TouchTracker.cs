@@ -38,7 +38,7 @@ public class TouchTracker : MonoBehaviour
     {
         if(rotatestatus ==true)
         {
-            rotateGo.transform.Rotate(Vector3.up , rotatespeed * Time.deltaTime);
+            rotateGo.transform.Rotate(Vector3.back , rotatespeed * Time.deltaTime);
         }
     }
     private void StoreTouches()
