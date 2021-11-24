@@ -43,18 +43,18 @@ public class ChangeObjectSpawnPosition : MonoBehaviour
 
         if (_currIndex == objectAmount - 1)
         {
-            _currIndex = 0; //To ensure the current index does not exceed the total index of the list
+            _currIndex = 0; 
         }
         else
         {
-            _currIndex++; //Increment current index by 1
+            _currIndex++; 
         }
 
         for (int i = 0; i < objectAmount; i++)
         {
             if (i == _currIndex)
             {
-                // Change the current anchor stage
+                
                 _planeGameobject.AnchorStage = _stageList[i].GetComponent<AnchorBehaviour>();
             }
         }
