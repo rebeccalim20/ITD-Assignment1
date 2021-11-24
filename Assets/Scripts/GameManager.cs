@@ -6,58 +6,64 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    //[Tooltip("This is for the firstimg when scan")]
-    //public GameObject imgdistance;
-    //[Tooltip("This is for the firstimgbutton when scan")]
-    //public GameObject imgdistancebtn;
-    // Start is called before the first frame update
-
-    public GameObject[] imgtargets;
-    private int currentScore;
+    private int Score;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI infos;
-    public GameObject panel;
-
+    public GameObject panel,lastpanel;
+    public GameObject[] imagetarget;
     public void Start()
     {
-        currentScore = 0;
-       
-
+        Score = 0;
+        scoreText.text = "Score : " + Score.ToString();
+        panel.SetActive(false);
     }
-    public void imagestargets()
+
+    public void firstimagetarget()
     {
-
-        if (imgtargets[0].activeInHierarchy == true)
+        if (imagetarget[0].activeInHierarchy == true )
         {
-            infos.text = "It is important to keep a distance away from one another as it helps to prevent spread of viruses ";
-            Debug.Log("yeaasd");
-            panel.SetActive(true);
-        }
 
-        if (imgtargets[1].activeInHierarchy == true)
-        {
             infos.text = "It is important to keep a distance away from one another as it helps to prevent spread of viruses ";
-            
-            panel.SetActive(true);
-        }
 
+            panel.SetActive(true);
+            Score += 10;
+        }
         else
         {
             panel.SetActive(false);
+        }
+
+    }
+    public void secondimagetarget()
+    {
+        
+        if (imagetarget[1].activeInHierarchy == true)
+        {
+
+            infos.text = "It is important to keep a distance away from one another as it helps to prevent spread of viruses ";
+
+            panel.SetActive(true);
+            Score += 10;
+        }
+        else
+        {
+            panel.SetActive(false);
+        }
+
+    }
+
+    public void checkfirsttarget()
+    {
+        if (imagetarget[1].activeInHierarchy == true)
+        {
+            lastpanel.SetActive(true);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        imagestargets();
-        //if (imgdistance.activeInHierarchy == true)
-        //{
-        //    imgdistancebtn.SetActive(true);
-        //}
-        //else
-        //{
-        //    imgdistancebtn.SetActive(false);
-        //}
+        
+        scoreText.text = "Score : " + Score.ToString();
     }
 }
