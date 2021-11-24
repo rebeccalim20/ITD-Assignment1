@@ -45,7 +45,7 @@ EditorBuildSettings:
     path: Assets/SamplesResources/Scenes/3-VuMarks.unity
     guid: d9b53b25a285640cf8ac170a80603e34
   - enabled: 1
-    path: Assets/Scenes/TestQuizCherWei.unity
+    path: Assets/Scenes/QuestionTwo.unity
     guid: 2a29efbe295cc4b42b84c76aeb909f6c
   - enabled: 1
     path: Assets/Scenes/main.unity
