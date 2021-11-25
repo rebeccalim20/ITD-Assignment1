@@ -12,7 +12,7 @@ public class ChangeObjectSpawnPosition : MonoBehaviour
     [SerializeField] private GameObject _planeFinder;
 
     public Text inventoryNameChange;
-    private int inventoryNumberTracker;
+    public int inventoryNumberTracker;
 
     private int _currIndex = 0;
 
@@ -23,13 +23,14 @@ public class ChangeObjectSpawnPosition : MonoBehaviour
 
     private void Start()
     {
+        inventoryNumberTracker = 0;
         int child = _stageTransform.childCount;
 
         for (int i = 0; i < child; i++)
         {
             _stageList.Add(_stageTransform.GetChild(i).gameObject);
         }
-        inventoryNumberTracker = 0;
+        
     }
 
     public void OnButtonPressed()
@@ -43,20 +44,20 @@ public class ChangeObjectSpawnPosition : MonoBehaviour
             inventoryNameChange.text = "Syringe";
             inventoryNumberTracker = 1;
         }
-        if (inventoryNumberTracker == 1)
+        else if(inventoryNumberTracker == 1)
         {
             inventoryNameChange.text = "Hand Sanitiser";
             inventoryNumberTracker = 2;
         }
-        if (inventoryNumberTracker == 2)
+        else if (inventoryNumberTracker == 2)
         {
             inventoryNameChange.text = "Mask";
             inventoryNumberTracker = 3;
         }
-        if (inventoryNumberTracker == 3)
+        else if (inventoryNumberTracker == 3)
         {
             inventoryNameChange.text = "Virus";
-            inventoryNumberTracker = 4;
+            inventoryNumberTracker = 0;
         } 
         
 
