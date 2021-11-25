@@ -22,11 +22,38 @@ public class Sceneloader : MonoBehaviour
     {
       
     }
+    public void menu()
+    {
+        SceneManager.LoadScene("menu");
+
+    }
     public void firstscene()
     {
         SceneManager.LoadScene("firstscene");
         
     }
+    public void loadquestion1 ()
+    {
+        SceneManager.LoadScene("Question 1");
+    }
+    public void loadquestion2()
+    {
+        SceneManager.LoadScene("Question 2");
+    }
+    public void loadquestion3()
+    {
+        SceneManager.LoadScene("Question 3");
+    }
+    public void loadquestion4()
+    {
+        SceneManager.LoadScene("Question 4");
+    }
+
+    public void inventoryfeature()
+    {
+        SceneManager.LoadScene("InventoryFeature");
+    }
+
     public void Quit()
     {
         Application.Quit();

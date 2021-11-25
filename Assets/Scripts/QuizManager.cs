@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class QuizManager : MonoBehaviour
 {
     public GameObject QuestionOne;
@@ -43,7 +44,8 @@ public class QuizManager : MonoBehaviour
     
     public void ExitButtonForDone()
     {
-        QuestionOne.gameObject.SetActive(false);
+        /*QuestionOne.gameObject.SetActive(false);*/
+        SceneManager.LoadScene("Question 2");
     }
 
     public void TryQuestionAgainButton()
