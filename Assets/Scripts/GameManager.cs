@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     private int Score;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI infos;
-    public GameObject panel,lastpanel;
+    public GameObject firstpanel ,panel,lastpanel;
     public GameObject[] imagetarget;
     public void Start()
     {
         Score = 0;
         scoreText.text = "Score : " + Score.ToString();
+        firstpanel.SetActive(true);
         panel.SetActive(false);
         lastpanel.SetActive(false);
     }
@@ -61,6 +63,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void loadmenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     // Update is called once per frame
     void Update()
     {

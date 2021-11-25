@@ -47,4 +47,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/menu.unity
     guid: 3fb66f8774592fd42a82ae23d5c9edf2
+  - enabled: 1
+    path: Assets/Scenes/firstscene.unity
+    guid: e0a30a4088544b349834bed8786a6485
+  - enabled: 1
+    path: Assets/Scenes/InventoryFeature.unity
+    guid: 5844d98013ace7b4ba8322ba6d538d77
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 12b6ecff1eeb5d1488090e3f2d32a604
+  - enabled: 1
+    path: Assets/Scenes/mainQuiz.unity
+    guid: 956d29b2745b097448ad0880e7167a53
+  - enabled: 1
+    path: Assets/Scenes/NewSceneTesting.unity
+    guid: 38d3bc3f4d09ac440ac3642a2e76c978
+  - enabled: 1
+    path: Assets/Scenes/Question 1.unity
+    guid: ca2373676c7c7da4bb0cd39d66c573db
+  - enabled: 1
+    path: Assets/Scenes/Question 2.unity
+    guid: 5284c8d37023e96469f3c5de485466d5
+  - enabled: 1
+    path: Assets/Scenes/Question 3.unity
+    guid: fe36c8aca21d97e4f802d3ff6e6b7556
+  - enabled: 1
+    path: Assets/Scenes/Question 4.unity
+    guid: 1cf572232c853784fbe71c92a6f639b9
   m_configObjects: {}
