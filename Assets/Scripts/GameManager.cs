@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI infos;
     public GameObject firstpanel ,panel,lastpanel;
     public GameObject[] imagetarget;
+
     public void Start()
     {
         Score = 0;
@@ -65,7 +66,8 @@ public class GameManager : MonoBehaviour
 
     public void loadmenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("menu");
+
     }
     // Update is called once per frame
     void Update()
