@@ -1600,6 +1600,7 @@ MonoBehaviour:
   _stageTransform: {fileID: 2051126301}
   _planeGameobject: {fileID: 1820420170}
   _planeFinder: {fileID: 1820420169}
+  inventoryNameChange: {fileID: 1780841057}
 --- !u!4 &1505067088
 Transform:
   m_ObjectHideFlags: 0
@@ -1775,7 +1776,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Inventory Item
+  m_Text: Virus
 --- !u!222 &1780841058
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1816,7 +1817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AnchorStage: {fileID: 1053791320}
-  DuplicateStage: 1
+  DuplicateStage: 0
   OnContentPlaced:
     m_PersistentCalls:
       m_Calls: []
